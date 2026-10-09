@@ -1,0 +1,92 @@
+{
+  "regression": {
+    "Random Forest": {
+      "MAE": 0.22556917764272555,
+      "RMSE": 0.3120857734335185,
+      "R2": 0.9698732615204732,
+      "Train Seconds": 1.42
+    },
+    "XGBoost": {
+      "MAE": 0.22324001105419466,
+      "RMSE": 0.30785635816798645,
+      "R2": 0.9706842891598891,
+      "Train Seconds": 0.5
+    },
+    "LightGBM": {
+      "MAE": 0.2235724713876708,
+      "RMSE": 0.3082504291063783,
+      "R2": 0.9706091900870134,
+      "Train Seconds": 0.39
+    },
+    "CatBoost": {
+      "MAE": 0.22334550978645554,
+      "RMSE": 0.3063115936772105,
+      "R2": 0.970977752328682,
+      "Train Seconds": 1.63
+    }
+  },
+  "classification": {
+    "Random Forest": {
+      "Precision": 0.8228619353896997,
+      "Recall": 0.8609555867533548,
+      "F1": 0.8402607148397989,
+      "F1 High and Critical": 0.9415807560137457,
+      "Train Seconds": 0.54
+    },
+    "XGBoost": {
+      "Precision": 0.8389661338051715,
+      "Recall": 0.8433064285158747,
+      "F1": 0.8408696470335169,
+      "F1 High and Critical": 0.9426900584795321,
+      "Train Seconds": 1.1
+    },
+    "LightGBM": {
+      "Precision": 0.8307726490973197,
+      "Recall": 0.8490019730287055,
+      "F1": 0.8394951755804779,
+      "F1 High and Critical": 0.9433526011560693,
+      "Train Seconds": 1.19
+    },
+    "CatBoost": {
+      "Precision": 0.811952660068103,
+      "Recall": 0.8590153840534928,
+      "F1": 0.8328139167956363,
+      "F1 High and Critical": 0.9436539556061468,
+      "Train Seconds": 1.95
+    }
+  },
+  "best": {
+    "regressor": "CatBoost",
+    "classifier": "XGBoost"
+  },
+  "not_yet_evaluated": [
+    "LSTM",
+    "Temporal Fusion Transformer",
+    "Graph Neural Network"
+  ],
+  "data_note": "Metrics come from synthetic data and will differ on real municipal data.",
+  "feature_importance": {
+    "DayOfWeek": 0.76396,
+    "IsWeekend": 0.46627,
+    "Pickup Gap": 0.35001,
+    "Population": 0.2219,
+    "Collection Frequency": 0.21585,
+    "Holiday Flag": 0.0961,
+    "Previous Garbage Volume": 0.09405,
+    "Market Pressure": 0.08096,
+    "Restaurant Density": 0.07086,
+    "Nearby Market Count": 0.05093,
+    "Latitude": 0.0235,
+    "Longitude": 0.01914,
+    "Festival Flag": 0.01633,
+    "Construction Flag": 0.01319,
+    "Temperature": 0.01172,
+    "Traffic": 0.00871,
+    "Humidity": 0.00831,
+    "Month": 0.00816,
+    "Nearby School Count": 0.00705,
+    "Complaint Count": 0.00561,
+    "Rainfall": 0.0023,
+    "Weather": 0.00138
+  }
+}
